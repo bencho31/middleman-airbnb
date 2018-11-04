@@ -1,0 +1,17 @@
+---
+title: Le Wagon - Middleman - Meet the team
+---
+
+<div id="team">
+ <div class="team-content">
+   <ul class="list-inline text-center">
+     <h1>This template was built with <i class="fas fa-heart"></i> by</h1>
+     <% ["jackc332", "bencho31"].each do |gh_username| %>
+     <li>
+       <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+       <h3><%= gh_username.capitalize %></h3>
+     </li>
+     <% end %>
+   </ul>
+ </div>
+</div>
